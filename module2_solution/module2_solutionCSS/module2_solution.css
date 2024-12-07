@@ -7,9 +7,11 @@
 
 body {
   font-family: Comic Sans MS, sans-serif;
+  font-size: 16px; /* Default dummy text font size */
 }
 
 h1 {
+  font-size: calc(16px * 1.75); /* 75% larger than dummy text */
   text-align: center;
   margin: 20px 0;
 }
@@ -34,7 +36,7 @@ h1 {
   padding-top: 50px; /* Extra padding at the top to avoid overlap */
   height: auto; 
   min-height: 150px;
-  overflow: auto;
+  overflow: auto; /* Ensures content scrolls if it exceeds the container size */
 }
 
 /* Specific colors for sections */
@@ -47,7 +49,7 @@ h1 {
   position: absolute;
   top: 0px; /* Adjusted spacing from the top */
   right: 0px; /* Adjusted spacing from the right */
-
+  font-size: calc(16px * 1.25); /* 25% larger than dummy text */
   background-color: white;
   color: black;
   padding: 5px 10px;
@@ -68,7 +70,6 @@ h1 {
 .sushi .section-title {
   background-color: #F0E68C; /* Khaki */
 }
-
 
 /* Large devices (Desktop) */
 @media (min-width: 992px) {

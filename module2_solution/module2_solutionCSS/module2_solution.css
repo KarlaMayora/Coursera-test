@@ -1,0 +1,95 @@
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Comic Sans MS, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-lg-4, .col-md-6, .col-md-12, .col-sm-12 {
+  padding: 10px;
+}
+
+/* Section styles */
+.section {
+  position: relative;
+  border: 1px solid black;
+  background-color: #D3D3D3; /* Light gray background */
+  color: black;
+  padding: 20px; /* Padding around the text */
+  padding-top: 50px; /* Extra padding at the top to avoid overlap */
+  height: auto; 
+  min-height: 150px;
+  overflow: auto;
+}
+
+/* Specific colors for sections */
+.chicken, .beef, .sushi {
+  background-color: #E0E0E0; 
+}
+
+/* Section title styles */
+.section-title {
+  position: absolute;
+  top: 0px; /* Adjusted spacing from the top */
+  right: 0px; /* Adjusted spacing from the right */
+
+  background-color: white;
+  color: black;
+  padding: 5px 10px;
+  font-weight: bold;
+  border: 1px solid black;
+  white-space: nowrap; /* Prevents wrapping of text */
+}
+
+/* Background colors for titles */
+.chicken .section-title {
+  background-color: #FFA500; /* Orange */
+}
+
+.beef .section-title {
+  background-color: #B22222; /* Firebrick */
+}
+
+.sushi .section-title {
+  background-color: #F0E68C; /* Khaki */
+}
+
+
+/* Large devices (Desktop) */
+@media (min-width: 992px) {
+  .col-lg-4 {
+    width: 33.33%;
+  }
+}
+
+/* Medium devices (Tablet) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+}
+
+/* Small devices (Mobile) */
+@media (max-width: 767px) {
+  .col-sm-12 {
+    width: 100%;
+  }
+}

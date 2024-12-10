@@ -1,0 +1,53 @@
+.navbar {
+    background-color: #C0C0C0; /* Replace with your desired background color */
+    border: none; /* Optional: removes the default border */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+.navbar .navbar-brand, .navbar-nav > li > a {
+    color: #000000; /* Adjust text color for better visibility */
+    font-weight: bold;
+}
+
+
+body {
+    background-color: #fcf9f9;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.section {
+    height: auto; /* Adjust height to auto to allow the content to grow naturally */
+    text-align: justify;
+    padding: 20px;
+    background-color: #C0C0C0;
+    border: 2px solid #A9A9A9;
+    margin: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Ensures no content spills out */
+    font-family: Comic Sans MS, sans-serif;
+}
+ .section h3 {
+    text-align: center;
+}
+
+
+
+p {
+    word-wrap: break-word; /* Ensures long words break onto the next line if necessary */
+    overflow-wrap: break-word; /* Same as word-wrap */
+    word-break: break-word; /* Breaks the word when necessary */
+}
+
+/* Styling for Back to Top link next to paragraph */
+a.back-to-top {
+    display: inline;
+    margin-left: 10px;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    white-space: nowrap; /* Prevents link from wrapping to the next line */
+}
+
+a.back-to-top:hover {
+    text-decoration: underline;
+}
